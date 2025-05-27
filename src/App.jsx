@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import NewEntry from "./pages/NewEntry";
 import PastEntries from "./pages/PastEntries";
 import Profile from "./pages/Profile";
-import Header from "./components/Header";
 import "./App.css";
 import Auth from "./components/Auth";
 
