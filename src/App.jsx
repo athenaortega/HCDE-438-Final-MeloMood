@@ -6,7 +6,7 @@ import NewEntry from "./pages/NewEntry";
 import PastEntries from "./pages/PastEntries";
 import Profile from "./pages/Profile";
 import Auth from "./components/Auth";
-import Callback from "./components/Callback"; 
+import Callback from "./components/Callback";
 import "./App.css";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
             element={<PastEntries entries={entries} />}
           />
           <Route path="/profile" element={<Profile user={user} />} />
-          //<Route path="/callback" element={<Callback />} /> 
+          <Route path="/callback" element={<Callback />} /> 
         </Routes>
       </div>
     </Router>
