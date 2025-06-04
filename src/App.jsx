@@ -5,12 +5,13 @@ import Home from "./pages/Home";
 import NewEntry from "./pages/NewEntry";
 import PastEntries from "./pages/PastEntries";
 import Profile from "./pages/Profile";
-import "./App.css";
 import Auth from "./components/Auth";
+import Callback from "./components/Callback"; 
+import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
-  const [entries, setEntries] = useState([]); 
+  const [entries, setEntries] = useState([]);
 
   if (!user) {
     return <Auth onUserChange={setUser} />;
@@ -23,7 +24,6 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
         <Navbar />
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
@@ -37,6 +37,7 @@ function App() {
             element={<PastEntries entries={entries} />}
           />
           <Route path="/profile" element={<Profile user={user} />} />
+          <Route path="/callback" element={<Callback />} /> 
         </Routes>
       </div>
     </Router>
@@ -44,3 +45,4 @@ function App() {
 }
 
 export default App;
+
