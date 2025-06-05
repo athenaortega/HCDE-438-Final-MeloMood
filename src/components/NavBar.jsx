@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav style={styles.nav}>
-      <h2 style={styles.logo}>MeloMood</h2>
       <div style={styles.links}>
         <Link to="/" style={styles.link}>Home</Link>
-        <Link to="/new-entry" style={styles.link}>Create New Entry</Link>
+        <Link to="/new-entry" style={styles.link}>Reflect on Art</Link>
         <Link to="/entries" style={styles.link}>Past Entries</Link>
         <Link to="/profile" style={styles.link}>Profile</Link>
       </div>
@@ -18,22 +17,24 @@ export default function Navbar() {
 const styles = {
   nav: {
     display: "flex",
-    justifyContent: "space-between",
     alignItems: "center",
-    padding: "1rem 2rem",
-    background: "#f5f5f5",
+    justifyContent: "space-between",
+    padding: "1rem 3rem",
+    background: "#EADAD5",
     borderBottom: "1px solid #ddd",
-  },
-  logo: {
-    margin: 0,
+    fontFamily: "'Quicksand', sans-serif",  // <--- here
   },
   links: {
     display: "flex",
-    gap: "1rem",
+    gap: "3rem", 
+    justifyContent: "flex-end",
+    flexGrow: 2,
   },
   link: {
     textDecoration: "none",
     color: "#333",
-    fontWeight: "bold",
+    fontSize: "1rem",
+    fontFamily: "'Quicksand', sans-serif",  
   },
 };
+

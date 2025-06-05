@@ -32,7 +32,7 @@ function Auth({ onUserChange }) {
 
   return (
     <div>
-      <h2>{isRegister ? "Register New Account" : "Sign In to MeloMood"}</h2>
+      <h3>{isRegister ? "Register New Account" : "Sign In to Frame Your Thoughts"}</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
