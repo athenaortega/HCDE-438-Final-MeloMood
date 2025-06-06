@@ -1,3 +1,4 @@
+//This component focuses on creating a journal entry object.
 import React, { useState } from "react";
 import { db } from "../firebase/firebaseDetails";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";

@@ -1,3 +1,5 @@
+//This component sets up the webpage for the journal entry archive. 
+
 import React from "react";
 
 export default function PastEntries({ entries }) {

@@ -1,3 +1,4 @@
+//This component focuses on setting up the structure for the journal entry archive. 
 export default function EntryList({ entries }) {
   return (
     <div>

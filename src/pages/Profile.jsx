@@ -11,7 +11,7 @@ function Profile() {
     genres: "",
     twitter: "",
     instagram: "",
-    photoURL: "", // new field
+    photoURL: "", 
   });
   const [loadingProfile, setLoadingProfile] = useState(true);
   const [saved, setSaved] = useState(false);
