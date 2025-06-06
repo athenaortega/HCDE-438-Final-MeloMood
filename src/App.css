@@ -90,3 +90,13 @@ a:hover {
   text-decoration: underline;
   color: var(--accent-hover);
 }
+
+
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
