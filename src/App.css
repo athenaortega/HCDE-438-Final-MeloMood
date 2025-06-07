@@ -1,9 +1,9 @@
 :root {
-  --bg-color: #fdf6f0; /* soft warm beige */
-  --text-color: #4b3f35; /* deep earth brown */
-  --accent-color: #a47148; /* clay brown */
+  --bg-color: #fdf6f0; 
+  --text-color: #4b3f35; 
+  --accent-color: #a47148; 
   --accent-hover: #8c5c38;
-  --secondary-accent: #d9b99b; /* sand tone */
+  --secondary-accent: #d9b99b; 
   --gradient-start: #fdf6f0;
   --gradient-end: #e4d4c8;
   --font-family: 'Georgia', serif;
@@ -19,6 +19,7 @@ body {
   font-family: var(--font-family);
   line-height: 1.6;
   transition: all 0.3s ease-in-out;
+  justify-content: center;
 }
 
 .app {

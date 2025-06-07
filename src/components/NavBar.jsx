@@ -22,7 +22,7 @@ const styles = {
     padding: "1rem 3rem",
     background: "#EADAD5",
     borderBottom: "1px solid #ddd",
-    fontFamily: "'Quicksand', sans-serif",  // <--- here
+    fontFamily: "'Quicksand', sans-serif",  
   },
   links: {
     display: "flex",

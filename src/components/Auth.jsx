@@ -1,3 +1,4 @@
+//This component focuses on setting up the authentication functionality.
 import React, { useState } from "react";
 import {
   createUserWithEmailAndPassword,
@@ -18,10 +19,8 @@ function Auth({ onUserChange }) {
     try {
       let userCredential;
       if (isRegister) {
-        // Register new user
         userCredential = await createUserWithEmailAndPassword(auth, email, password);
       } else {
-        // Sign in existing user
         userCredential = await signInWithEmailAndPassword(auth, email, password);
       }
       onUserChange(userCredential.user);

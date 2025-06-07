@@ -1,3 +1,5 @@
+//This component focuses on obtaining the artwork from the Met Museum collection via their API.
+//The functionality includes randomly selecting an artwork that the user must journal with.
 import React, { useEffect, useState } from "react";
 
 export default function ArtFetcher({ onArtSelected }) {
@@ -18,7 +20,7 @@ export default function ArtFetcher({ onArtSelected }) {
         setArtwork(artData);
         onArtSelected(artData);
       } else {
-        fetchRandomArt(); // Try again if no image
+        fetchRandomArt(); 
       }
     } catch (err) {
       console.error("Failed to fetch art:", err);
