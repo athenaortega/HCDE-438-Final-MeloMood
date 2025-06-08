@@ -31,6 +31,9 @@ body {
   backdrop-filter: blur(4px);
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
+  min-height: 100vh;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 #root {
